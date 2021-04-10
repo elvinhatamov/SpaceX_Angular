@@ -1,0 +1,23 @@
+<app-missionlist></app-missionlist>
+
+<table border ="1">
+
+
+ <tr>
+   <td>Mission Name</td>
+   <td>Launch year</td>
+   <td>Details</td>
+   <td>Mission Punch Small</td>
+ </tr>
+
+
+
+<tr *ngFor ="let item of data">
+   <td>{{item.mission_name}}</td>
+   <td>{{item.launch_year}}</td>
+   <td>{{item.details}}</td>
+   <td>{{item.mission_patch_small}}</td>
+ </tr>
+ </table>
+
+<router-outlet></router-outlet>
